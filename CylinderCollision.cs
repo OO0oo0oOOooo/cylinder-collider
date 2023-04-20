@@ -46,6 +46,12 @@ public class CylinderCollision : MonoBehaviour
         SphereCastFeet();
     }
 
+    public void SetHeight(float value)
+    {
+        _cylinder.transform.localScale = new Vector3(1, value, 1);
+        CapsuleHalfHeight = value;
+    }
+
     private void SphereCastFeet()
     {
         if (Physics.SphereCast(_cylinder.transform.position + (transform.up * _spherecastFeetStart), _spherecastFeetRadius, Vector3.down, out _feetHit, CapsuleHalfHeight, _layerMask))
