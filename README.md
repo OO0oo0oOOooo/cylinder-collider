@@ -2,7 +2,7 @@
 A cylinder collider for rigidbody players.
 
 # Features
-* Set max standable slope
+* Set max slope
 * Adjust cylinder height
 * Spherecast feet and head
 * GroundChecks
